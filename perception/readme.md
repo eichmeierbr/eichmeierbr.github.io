@@ -6,12 +6,29 @@
 
 This project uses a classical approach to scene recognition. The first step uses different filters (guassion, derivative of gaussian, etc.) at different scales to create a bank of filtered images. 
 
-![Filter Bank](https://github.com/eichmeierbr/portfolio/blob/master/perception/images/bag_of_words/filter_bank.png)
+![Filter Bank](images/bag_of_words/filter_bank.png)
 
 Then, a feature vector is created by creating a “pipe” of a random subset of pixels through all of the images. Using a sample of these feature vectors from the training images, I used a K-means cluster to define a number of different visual wors within the images. The next four pairs of images show a visual word representation of an aquarium, kitchen, waterfall, and desert respectively. 
 
-![Filter Bank](https://github.com/eichmeierbr/portfolio/blob/master/perception/images/bag_of_words/kitchen.png) ![Filter Bank](https://github.com/eichmeierbr/portfolio/blob/master/perception/images/bag_of_words/kitchen_wordmap.png)
+<p float="center">
+  <img src="images/bag_of_words/aquarium.png" width="400" />
+  <img src="images/bag_of_words/aquarium_wordmap.png" width="400" /> 
+</p>
 
+<p float="center">
+  <img src="images/bag_of_words/kitchen.png" width="400" />
+  <img src="images/bag_of_words/kitchen_wordmap.png" width="400" /> 
+</p>
+
+<p float="center">
+  <img src="images/bag_of_words/waterfall.png" width="400" />
+  <img src="images/bag_of_words/waterfall_wordmap.png" width="400" /> 
+</p>
+
+<p float="center">
+  <img src="images/bag_of_words/desert.png" width="400" />
+  <img src="images/bag_of_words/desert_wordmap.png" width="400" /> 
+</p>
 
 After computing the words in an image, I use a spatial pyramid to create a histogram of the frequency of words occurring at different locations in the image. I then compare the spatial histogram to the histogram representation of each image in the training data and assign the class of the scene to the most similar histogram. This approach to scene recognition reached about a 65% accuracy when selecting between eight classes.
 
