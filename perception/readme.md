@@ -6,7 +6,7 @@
 
 This project uses a classical approach to scene recognition. The first step uses different filters (guassion, derivative of gaussian, etc.) at different scales to create a bank of filtered images. 
 
-![Filter Bank](images/bag_of_words/filter_bank.png)
+ <img align=center src="images/bag_of_words/filter_bank.png" />
 
 Then, a feature vector is created by creating a “pipe” of a random subset of pixels through all of the images. Using a sample of these feature vectors from the training images, I used a K-means cluster to define a number of different visual wors within the images. The next four pairs of images show a visual word representation of an aquarium, kitchen, waterfall, and desert respectively. 
 
@@ -37,7 +37,7 @@ After computing the words in an image, I use a spatial pyramid to create a histo
 
 This project used classical feature detection and matching to create a homography between a template image and a scene. I used the FAST feature detector and the BRIEF feature descriptor to locate and correlate features between two images.
 
-#### Feature matching goes here
+![Feature Matching](images/homography/feature_matching.png)
 
 Using these correspondences, I found the homography between both images using the following procedure:
 
@@ -54,5 +54,5 @@ The H matrix is a 3x3 matrix with 8 degrees of freedom. This means we can solve 
 After finding the homography between the template book cover and the scene shown in the previous image, I superimpose another book cover into the scene.
 
 #### HP Book Cover
-
+ <img align=center src="images/homography/harry_potter.png" />
 
