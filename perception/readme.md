@@ -53,6 +53,25 @@ The H matrix is a 3x3 matrix with 8 degrees of freedom. This means we can solve 
 
 After finding the homography between the template book cover and the scene shown in the previous image, I superimpose another book cover into the scene.
 
-#### HP Book Cover
- <img align=center src="images/homography/harry_potter.png" />
+<p align="center">
+  <img align="center" src="images/homography/harry_potter.png" />
+</p>
 
+Using this same homography algorithm, there's two fun applications I implmeented. The frst algorithm is a basic panorama creator. It works by taking two images that have some amount of overlap and match the common features. Then it finds a homography from one image to the other. Improvements could be made to the panorama by bluring the boundaries between the two images. Here is a panorama I made myself using this method. The images were taken on the bridge connecting Newell Simon Hall and Wean Hall at Carnegie Mellon University. The background shows the Cathedral of Learning at the University of Pittsburgh.
+
+<p float="center">
+  <img src="images/homography/pano_left.jpg" width="400" />
+  <img src="images/homography/pano_right.jpg" width="400" /> 
+</p>
+
+<p float="center">
+  <img src="images/homography/full_pano.png" />
+</p>
+
+The second fun application is a basic augmented reality application. In this program I embed one video inside of another. The main video shows a scene of books, including the template book shown in the feature matching image. The second video is from Kung Fu Panda. For each frame of the book image I locate the template book and replace its area within the frame with a frame from the movie.
+
+<p float="center">
+  <img src="images/homography/panda_ar.gif" />
+</p>
+
+### Feature Tracking - The Lukas-Kanade Algorithm
