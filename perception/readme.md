@@ -92,7 +92,7 @@ Next, I slightly modified the algorithm to find moving objects within a scene. I
 
 ### 3D Reconstruction
 
-This project creates a 3D point cloud from two images of the same object.
+This project creates a 3D point cloud from two images of the same object. The following sequence of images reconstructs an ancient temple in 3D using two images taken at a slightly different perspective from the camera. Beyond documenting historical artifacts, 3D reconstruction has extensive application in SLAM/Visual Odometry.
 
 <p float="center">
   <img src="images/reconstruction/im1.png" width="400" />
