@@ -94,3 +94,26 @@ Next, I slightly modified the algorithm to find moving objects within a scene. I
 
 This project creates a 3D point cloud from two images of the same object.
 
+<p float="center">
+  <img src="images/reconstruction/im1.png" width="400" />
+  <img src="images/reconstruction/im2.png" width="400" /> 
+</p>
+
+The first step in this process is finding the correspondances between the two images. For this project I was given the points to create the reconstruction, but they could just as easily be found using a feature matching method similar to the one I used in the homography project. Then I calculate the fundamental matrix using the 8-point algorithm. Given any point in one image, the fundamental finds the epipolar line along with that point resides in the other image. I then scan along that epipolar line to find the corresponding point in the other image.
+
+<p float="center">
+  <img src="images/reconstruction/epipolarMatch.png" />
+</p>
+
+Given the fundamental matrix, the relative camera matrices between the two images can be computed. Using the point correspondances and the relative matrices I performed a least squares error minimiation to find the most likely 3D point for each given correspondance pair. The next image shows the reconstructed temple in 3D.
+
+<p float="center">
+  <img src="images/reconstruction/2temples.png" />
+</p>
+
+An application of this reconstruction is finding the position of a car in 3D space. To demonstrate this functionality, I received images from the the paper "CarFusion: Combining Point Tracking and Part Detection for Dynamic 3D Reconstruction of Vehicles" by N Dinesh Reddy, Minh Vo, and Srinivasa G. Narasimhan. This paper reconstructs the positions of cars driving through an intersection using three uncalibrated cameras. Using three concurrent images from their work, I find the location of the vehicle in the intersection relative to the first camera. The next image shows the reconstruction from two image trios.
+
+
+<p float="center">
+  <img src="images/reconstruction/cars.png" />
+</p>
