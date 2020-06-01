@@ -1,6 +1,6 @@
 # Perception
 
-## CV Assignments
+## Computer Vision Assignments
 
 ### Bag of Words - Scene Recognition using Filter Banks
 
@@ -75,3 +75,22 @@ The second fun application is a basic augmented reality application. In this pro
 </p>
 
 ### Feature Tracking - The Lukas-Kanade Algorithm
+
+In this project I made my own implementation of the Lukas Kanade tracking algorithm. I then made modern improvements to the algorithm using template correction and the inverse composition approach to estimating the template warp between frames. I evaluated the implementation on two different scenes, a car and a girl with a scooter. Both scenes assume the template only changes in position and is constant in size and shape. The red rectangle shows the tracking with template correction; the blue does not have template correction.
+
+<p float="center">
+  <img src="images/tracking/car.gif" width="400" />
+  <img src="images/tracking/girl.gif" width="400" /> 
+</p>
+
+Next, I slightly modified the algorithm to find moving objects within a scene. I did this by using the entire previous frame through the sequence as the template and finding the warp from one frame to the next. Then, I determine the moving objects in the scene by computing if the difference in each pixel between the two images is above a certain threshold. The following two gifs show a scene of moving ants and driving cars respectively. Note the camera in the car sequence is moving throughout the sequence and the algorithm mostly only detects the moving objects in the scene.
+
+<p float="center">
+  <img src="images/tracking/ant.gif" width="400" />
+  <img src="images/tracking/aerial.gif" width="400" /> 
+</p>
+
+### 3D Reconstruction
+
+This project creates a 3D point cloud from two images of the same object.
+
