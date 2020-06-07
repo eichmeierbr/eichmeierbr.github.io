@@ -123,3 +123,77 @@ An application of this reconstruction is finding the position of a car in 3D spa
 In this project I implemented a fully connected neural network. I implemented the network to be modular in number of layers, nodes per layer, and activation function. I then trained the network to classify handwritten characters using the MNIST dataset. Finally, I created an algorithm to read in a full image of handwritten text, segment each of the letters, and use the network to convert the handwritten characters to text. 
 
 
+<p float="center">
+  <img src="images/learning/todoList.png" />
+</p>
+
+Prediction Accuracy: 87%
+
+T0 DO LIST
+
+I N2EE A TDDD LIST
+
+2 CH2CK DFE THE FIRST
+
+THING 0N TODO LIST
+
+3 R2ALIZE YOU HAVE ALREADT
+
+COM8LETED Z JHINGS
+
+4 REWARD YOURSELF WITR
+
+A NAP
+
+
+<p float="center">
+  <img src="images/learning/haiku.png" />
+</p>
+
+Prediction Accuracy: 89%
+
+HAIKUS ARE EASY
+
+BUT SQMETIMES TREX DDNT MAKE SENGE
+
+RBFRI GERATOR
+
+
+<p float="center">
+  <img src="images/learning/deepLearning.png" />
+</p>
+
+Prediction Accuracy: 95%
+
+DEEP LEARMING
+
+DEEPER LEARNING
+
+DEEPESP LEARNING
+
+<p float="center">
+  <img src="images/learning/alphabet.png" />
+</p>
+
+Prediction Accuracy: 75%
+
+2BCDEFG
+
+HIJKLMN
+
+OPQRSTU
+
+VWXYZ
+
+1 Z3GSGJIJJ
+
+Using the same neural network implementation, I also trained a 4 layer auto encoder to compress a vector from 1024 floating point values to 32, then reconstruct the input letter from the compressed data. The following images show my results on the letters M, N, O, and P.
+
+<p float="center">
+  <img src="images/learning/ms.png" width="400" />
+  <img src="images/learning/ns.png" width="400" /> 
+</p>
+<p float="center">
+  <img src="images/learning/os.png" width="400" />
+  <img src="images/learning/ps.png" width="400" /> 
+</p>
