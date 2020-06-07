@@ -57,7 +57,7 @@ After finding the homography between the template book cover and the scene shown
   <img align="center" src="images/homography/harry_potter.png" />
 </p>
 
-Using this same homography algorithm, there's two fun applications I implmeented. The frst algorithm is a basic panorama creator. It works by taking two images that have some amount of overlap and match the common features. Then it finds a homography from one image to the other. Improvements could be made to the panorama by bluring the boundaries between the two images. Here is a panorama I made myself using this method. The images were taken on the bridge connecting Newell Simon Hall and Wean Hall at Carnegie Mellon University. The background shows the Cathedral of Learning at the University of Pittsburgh.
+Using this same homography algorithm, there's two fun applications I implemented. The frst algorithm is a basic panorama creator. It works by taking two images that have some amount of overlap and match the common features. Then it finds a homography from one image to the other. Improvements could be made to the panorama by bluring the boundaries between the two images. Here is a panorama I made myself using this method. The images were taken on the bridge connecting Newell Simon Hall and Wean Hall at Carnegie Mellon University. The background shows the Cathedral of Learning at the University of Pittsburgh.
 
 <p float="center">
   <img src="images/homography/pano_left.jpg" width="400" />
@@ -117,3 +117,9 @@ An application of this reconstruction is finding the position of a car in 3D spa
 <p float="center">
   <img src="images/reconstruction/cars.png" />
 </p>
+
+### Image Recognition with Neural Networks
+
+In this project I implemented a fully connected neural network. I implemented the network to be modular in number of layers, nodes per layer, and activation function. I then trained the network to classify handwritten characters using the MNIST dataset. Finally, I created an algorithm to read in a full image of handwritten text, segment each of the letters, and use the network to convert the handwritten characters to text. 
+
+
