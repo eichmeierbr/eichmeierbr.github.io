@@ -57,7 +57,7 @@ After finding the homography between the template book cover and the scene shown
   <img align="center" src="images/homography/harry_potter.png" />
 </p>
 
-Using this same homography algorithm, there's two fun applications I implmeented. The frst algorithm is a basic panorama creator. It works by taking two images that have some amount of overlap and match the common features. Then it finds a homography from one image to the other. Improvements could be made to the panorama by bluring the boundaries between the two images. Here is a panorama I made myself using this method. The images were taken on the bridge connecting Newell Simon Hall and Wean Hall at Carnegie Mellon University. The background shows the Cathedral of Learning at the University of Pittsburgh.
+Using this same homography algorithm, there's two fun applications I implemented. The frst algorithm is a basic panorama creator. It works by taking two images that have some amount of overlap and match the common features. Then it finds a homography from one image to the other. Improvements could be made to the panorama by bluring the boundaries between the two images. Here is a panorama I made myself using this method. The images were taken on the bridge connecting Newell Simon Hall and Wean Hall at Carnegie Mellon University. The background shows the Cathedral of Learning at the University of Pittsburgh.
 
 <p float="center">
   <img src="images/homography/pano_left.jpg" width="400" />
@@ -116,4 +116,84 @@ An application of this reconstruction is finding the position of a car in 3D spa
 
 <p float="center">
   <img src="images/reconstruction/cars.png" />
+</p>
+
+### Image Recognition with Neural Networks
+
+In this project I implemented a fully connected neural network. I implemented the network to be modular in number of layers, nodes per layer, and activation function. I then trained the network to classify handwritten characters using the MNIST dataset. Finally, I created an algorithm to read in a full image of handwritten text, segment each of the letters, and use the network to convert the handwritten characters to text. 
+
+
+<p float="center">
+  <img src="images/learning/todoList.png" />
+</p>
+
+Prediction Accuracy: 87%
+
+T0 DO LIST
+
+I N2EE A TDDD LIST
+
+2 CH2CK DFE THE FIRST
+
+THING 0N TODO LIST
+
+3 R2ALIZE YOU HAVE ALREADT
+
+COM8LETED Z JHINGS
+
+4 REWARD YOURSELF WITR
+
+A NAP
+
+
+<p float="center">
+  <img src="images/learning/haiku.png" />
+</p>
+
+Prediction Accuracy: 89%
+
+HAIKUS ARE EASY
+
+BUT SQMETIMES TREX DDNT MAKE SENGE
+
+RBFRI GERATOR
+
+
+<p float="center">
+  <img src="images/learning/deepLearning.png" />
+</p>
+
+Prediction Accuracy: 95%
+
+DEEP LEARMING
+
+DEEPER LEARNING
+
+DEEPESP LEARNING
+
+<p float="center">
+  <img src="images/learning/alphabet.png" />
+</p>
+
+Prediction Accuracy: 75%
+
+2BCDEFG
+
+HIJKLMN
+
+OPQRSTU
+
+VWXYZ
+
+1 Z3GSGJIJJ
+
+Using the same neural network implementation, I also trained a 4 layer auto encoder to compress a vector from 1024 floating point values to 32, then reconstruct the input letter from the compressed data. The following images show my results on the letters M, N, O, and P.
+
+<p float="center">
+  <img src="images/learning/ms.png" width="400" />
+  <img src="images/learning/ns.png" width="400" /> 
+</p>
+<p float="center">
+  <img src="images/learning/os.png" width="400" />
+  <img src="images/learning/ps.png" width="400" /> 
 </p>
