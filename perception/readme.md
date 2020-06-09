@@ -213,3 +213,14 @@ Finally, I integrate the matrix of psuedonormals using the Frankot-Chellappa alg
 <p float="center">
   <img src="images/photometricStereo/uncalibrated_face.png" />
 </p>
+
+## Other Learning Projects with Object Detection
+
+### Custom YOLO
+
+In this project I trained a custom network ontop of YOLO/Darknet to detect three random objects from my living room: a rubick's cube, a cactus, and a can of my wife's favorite "hotchocky" (hot chocolate). I then ran the network live on my computer's webcam to show the results. Pardon the delays in the video, my laptop at the time was quite slow.
+
+<p float="center">
+  <img src="images/customYOLO.gif" />
+</p>
+
