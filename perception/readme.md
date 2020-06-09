@@ -197,3 +197,19 @@ Using the same neural network implementation, I also trained a 4 layer auto enco
   <img src="images/learning/os.png" width="400" />
   <img src="images/learning/ps.png" width="400" /> 
 </p>
+
+
+### Photometric Stereo
+
+In this project I use 7 different images to reconstruct the shape of a women's face. Each of the images is taken at the same angle, but light shines on the face from a different angle. To do so, I extract the luminance channel from each image. Then, I estimate the pseudonormals of the surface in a least squares sense using singular value decomposition. I then normalize the psuedonormal at each pixel to find the pixel's albido. The left image shows the image albedos and the right image shows the normals.
+
+<p float="center">
+  <img src="images/photometricStereo/uncalibrated_albedo.png" width="400" />
+  <img src="images/photometricStereo/uncalibrated_normals.png" width="400" /> 
+</p>
+
+Finally, I integrate the matrix of psuedonormals using the Frankot-Chellappa algorithm to reconstruct the facial shape within the image. Careful application of this algorithm allows the face to be reconstructed even when the angle of the incident light rays is uncalibrated. This image shows the uncalibrated reconstruction of the face using the previous albedo and normal data.
+
+<p float="center">
+  <img src="images/photometricStereo/uncalibrated_face.png" />
+</p>
