@@ -224,3 +224,24 @@ In this project I trained a custom network ontop of YOLO/Darknet to detect three
   <img src="images/customYOLO.gif" />
 </p>
 
+### Bee Recognition
+
+While I was at Utah State University, I too an Intelligent Systems (Intro to AI) course from Dr. Vladimir Kulyukin. The first portion of the course focused on machine learning with an emphasis on neural networks. Dr. Kulyukin maintains a beehive for research involving applying machine learning to hive monitoring. For the mid-semester project, I used neural networks, both fully connected and convolutional, for image and audio sample classification. The images were taken directly from a Raspberry Pi-Cam that performed motion detection on the hive; I trained the networks to determine the presence of a bee in the image. I also trained networks to classify audio samples of bees buzzing, crickets chirping, and background noise.
+
+The following tables show my training results. You can also read my first attempt at writing a machine learning report [Here](images/beeRecognition.pdf):
+
+| Architecture | Bee | No Bee |
+| --- | --- | --- |
+| Fully-Connected | 88% | 90% |
+| Convolutional | 94.5% | 92.5% |
+
+| Architecture | Bee | Cricket | Background |
+| --- | --- | --- | --- | 
+| Fully-Connected | 0.04% | 99% | 67.6% |
+| Convolutional | 0.1% | 95.6% | 65.4% |
+
+Dr. Kulyukin has since published several papers on his reasearch:
+
+[On Video Analysis of Omnidirectional Bee Traffic Counting Bee Motions with Motion Detection and Image Classification](https://www.researchgate.net/publication/335694732_On_Video_Analysis_of_Omnidirectional_Bee_Traffic_Counting_Bee_Motions_with_Motion_Detection_and_Image_Classification)
+
+[Toward AUdio Beehive Monitoring Deep Learning vs Standard Machine Learning in Classifying Beehive Audio Samples](https://www.researchgate.net/publication/327478653_Toward_Audio_Beehive_Monitoring_Deep_Learning_vs_Standard_Machine_Learning_in_Classifying_Beehive_Audio_Samples)
