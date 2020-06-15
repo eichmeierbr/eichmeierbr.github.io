@@ -16,3 +16,12 @@ My teammates worked on the resetting task, which involved removing objects from 
   <img src="images/grocery_rl/grocery_mustard.gif" width="400" />
   <img src="images/grocery_rl/grocery_tuna.gif" width="400" />
 </p>
+
+
+The report and presentation my teammates and I made for this project can by found here:
+
+[Report](images/grocery_rl/Autonomy_Report.pdf)
+
+[Presentation](https://docs.google.com/presentation/d/1j3ABuQvJndEL6WjDsbPbcUgUFTWPosp4RI9eBwghe20/edit?usp=sharing)
+
+
