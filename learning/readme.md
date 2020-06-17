@@ -47,6 +47,8 @@ Similar to a project in my perception experience, I created a fully connected ne
 
 In this project I created a Q-Learning model to learn to play a simple "Mountain Car" game. In the game, the car is at the bottom of a valley. The state space is the cart's postition and velocity. The action space is to move left, move right, or do nothing. The problem is that the car does not have enough power to directly move up the hill, so it must learn to rock back and forth and use momentum to reach the top. To find the optimal action, the q-learning model learns a single layer linear function to approximate the reward function for each individual action as a function of the input space. It then passes the cart space through the three models and selects the highest value. I also included a random element to introduce state space exploration vs. exploitation. 
 
+<img align=center src="images/rl_car.gif" />
+
 5) Hidden Markov Models and the Viterbi Algorithm
 
 I implemented a system to estimate the  emission, transition, and prior values of a system for an HMM. I also implemented the viterbi algorithm to find the most likely sequence of hidden states for a system. I validated the algorithm on a data set that reads in sentences, and predicts the part of speech for each word. However, due to the nature of HMMs, the algorithm I implemented could readily be applied to any data setting assuming the training data is presented in a similar manner.
