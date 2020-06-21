@@ -1,5 +1,11 @@
 # Machine Learning Projects
 
+## Stock Market Prediction
+
+In my free time, I play around with machine learning applied to the stock market. While I currently don't use my work to seriously invest, I do enjoy applying my knowledge to predicting such complicated data. I first worked on this project in an Intelligent Systems course at Utah STate University. My initial efforts explored the effects of several hyperparameters on training shallow networks on predicting Apple stock. You can read my report for the project [here](images/stocks/stocks_report.pdf).
+
+Since starting this project for the class, I have expanded it in several ways. I worked out a simulator to evaluate a trading algorithm for some period of time on historical stock data. I've also implemented wrapper classes with several models (SVM, KNN, Decision Trees, etc.) and constructed a majority vote system. I'm currently working on this project and am beginning to expand to neural networks.
+
 ## Reinforcement Learning for a Robotic Arm
 
 For the Robot Autonomy course at Carnegie Mellon, I worked on teaching a robotic arm to place groceries in a cupboard using reinforcement learning. The project was originally intended to be realized on a physical arm, but restrictions to the COVID-19 pandemic caused us to move to a simulated environment. We used RLBench and V-Rep to simulate the arm. You can find the code for this project in my git repository [here](https://github.com/eichmeierbr/robo_autonomy_project).
@@ -23,7 +29,6 @@ The report and presentation my teammates and I made for this project can by foun
 [Report](images/grocery_rl/Autonomy_Report.pdf)
 
 [Presentation](https://docs.google.com/presentation/d/1j3ABuQvJndEL6WjDsbPbcUgUFTWPosp4RI9eBwghe20/edit?usp=sharing)
-
 
 ## Introduction to Machine Learning - Carnegie Mellon University
 
