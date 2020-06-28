@@ -15,17 +15,13 @@ This video shows a beta demonstration of the system several weeks before the com
 Emergency leadership attempts to direct response efforts and resources during emergencies. Their biggest difficulty is understanding the nature and extent of a dynamic emergency despite misinformation and information overload. To enable their response, I developed a GUI that shows leadership a map of the emergency area with pins representing responders and victims. It also allows leadership to update victim counts as the situation evolves, view the personal information of the responders on scene, view live body camera footage, and broadcast it to the team.
 
 <p align="center">
-  <img align="center" src="images/mates/command_responders.png" />
+  <img align="center" src="images/mates/command_responders.png" height="300" />
 </p>
 <p align="center">
-  <img align="center" src="images/mates/command_victims.png" />
+  <img align="center" src="images/mates/command_victims.png" height="300"/>
 </p>
 <p align="center">
-  <img align="center" src="images/mates/command_map.png" />
-</p>
-
-<p align="center">
-  <img align="center" src="images/mates/command_responders.png" />
+  <img align="center" src="images/mates/command_map.png" height="300" />
 </p>
 
 ### Medical Responders
@@ -33,8 +29,8 @@ Emergency leadership attempts to direct response efforts and resources during em
 The medical first responders survey the emergency area to locate and number the victims. When they find a victim, they detail the triage count of the victims in the area and an optional description. The app then creates a pin at the GPS coordinates of the responder and updates the emergency map to central command. This easy to use system was designed to quickly update data and help central command send medical responders to high victim areas.
 
 <p align="center">
-  <img align="center" src="images/mates/medical_responder.png" />
-  <img align="center" src="images/mates/medical_location.png" />
+  <img align="center" src="images/mates/medical_responder.png" height="300"/>
+  <img align="center" src="images/mates/medical_location.png" height="300"/>
 </p>
 
 ### Armed Responders
@@ -44,5 +40,5 @@ For active threat emergencies, such as an armed threat, armed responders search 
 The operator can select the desired stream from one of four sources: body camera, thermal camera, bore scope, and team stream. The body camera stream enables operators to place their body camera in hallways or around corners to watch the area remotely, or without exposing themselves to danger. The thermal camera enables responders to find heat signatures and locate hidden threats or victims. The bore scope is a camera on the end of a wire that enables the responders to view under doorways or around corners before exposing themselves to danger. The final stream, team stream, comes from leadership and shows one of the camera feeds from another operator. It would be useful to identify a shooter or other item of interest.
 
 <p align="center">
-  <img align="center" src="images/mates/armed_responder.png" />
+  <img align="center" src="images/mates/armed_responder.png" height="300"/>
 </p>
