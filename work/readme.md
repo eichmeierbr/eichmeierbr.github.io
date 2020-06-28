@@ -9,9 +9,9 @@ After my Sophomre . The device mounts the screen to a custom hinge. This hinge c
 
 
 <p align="center">
-  <img align="center" src="images/sdl/housing_multiview.png" height="300"/>
+  <img align="center" src="images/sdl/housing_multiview.png" width="500"/>
 </p>
 
 <p align="center">
-  <img align="center" src="images/sdl/housing_front.png" height="300"/>
+  <img align="center" src="images/sdl/housing_front.png" width="500"/>
 </p>
