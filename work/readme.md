@@ -11,14 +11,14 @@ I worked at the Utah Power Electronics Lab (UPEL) during my final two years at U
 One of the primary research areas at UPEL focuses on advanced battery technologies. My first major project involved retrofitting a concrete jet engine testing cell to facilitate our battery testing. For my efforts, I was allowed to name the new lab as the BLAST Lab. Since its completion, the BLAST Lab has been used to test various research batteries, batteries for EP Systems, and a battery for the NASA X-57 aircraft. 
 
 <p align="center">
-  <img align="center" src="images/upel/blast_door.jpg" width="500"/>
+  <img align="center" src="images/upel/blast_door.png" width="500"/>
 </p>
 
 Updating the facilities included several electrical upgrades. I designed, machined, and installed several pass-through panels to transmit sensor data from the testing cell to the observation area. 
 
 <p align="center">
-  <img align="center" src="images/upel/panel_one.jpg" height="350"/>
-  <img align="center" src="images/upel/panel_two.jpg" height="350"/>
+  <img align="center" src="images/upel/panel_one.png" height="350"/>
+  <img align="center" src="images/upel/panel_two.png" height="350"/>
 </p>
 
 I also designed two mobile testing stands. One stand serves as the testing platform and mount to one of the filters. The other stand carries the other primary filter. Finally, when lithium ion batteries enter thermal runaway, they emit toxic fumes. I designed the ducting and building modifications to enable our filters to remove these fumes.
