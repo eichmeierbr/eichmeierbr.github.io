@@ -39,7 +39,7 @@ From January to October in 2018 I designed an advanced battery pack for an exter
 I designed the first prototype of the exterior casing and machined many of the components using a 3-axis CNC mill. Two of the more complex of these pieces includes the power board heat sink and the front plate, both of which are shown below. A major challenge in the heat sink design was designing such small pads to interface directly with heat generating componenets.
 
 <p align="center">
-  <img align="center" src="images/upel/amped_hs.jpg" width="500"/>
+  <img align="center" src="images/upel/amped_hs.png" width="500"/>
 </p>
 
 <p align="center">
