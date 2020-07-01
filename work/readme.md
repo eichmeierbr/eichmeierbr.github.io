@@ -17,21 +17,15 @@ One of the primary research areas at UPEL focuses on advanced battery technologi
 Updating the facilities included several electrical upgrades. I designed, machined, and installed several pass-through panels to transmit sensor data from the testing cell to the observation area. 
 
 <p align="center">
-  <img align="center" src="images/upel/panel_one.jpg" width="500"/>
-</p>
-
-<p align="center">
-  <img align="center" src="images/upel/panel_two.jpg" width="500"/>
+  <img align="center" src="images/upel/panel_one.jpg" height="350"/>
+  <img align="center" src="images/upel/panel_two.jpg" height="350"/>
 </p>
 
 I also designed two mobile testing stands. One stand serves as the testing platform and mount to one of the filters. The other stand carries the other primary filter. Finally, when lithium ion batteries enter thermal runaway, they emit toxic fumes. I designed the ducting and building modifications to enable our filters to remove these fumes.
 
 <p align="center">
-  <img align="center" src="images/upel/carts_one.jpg" width="500"/>
-</p>
-
-<p align="center">
-  <img align="center" src="images/upel/carts_two.png" width="500"/>
+  <img align="center" src="images/upel/carts_one.jpg" height="300"/>
+  <img align="center" src="images/upel/carts_two.png" height="300"/>
 </p>
 
 #### Project 2: AMPED
