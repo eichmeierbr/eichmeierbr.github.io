@@ -1,5 +1,31 @@
 # Integrated Projects
 
+## Autonomous Aerial Collision Avoidance System (AACAS)
+
+I worked on the AACAS system as part of my final project in the Master's of Robotic Systems Development (MRSD) program at Carnegie Mellon University. Here is the project [website](https://mrsdprojects.ri.cmu.edu/2020teame) as a reference. The three semester project spent the first month on systems engineering and project management planning, and the final two semesters on development.
+
+
+The project focused on the desire to enable beyond visual line of sight (BVLOS) flying for drones. A hurdle in enabling BVLOS flight is handling collision scenarios with other aerial objects. In a team of four, I developed a proof of concept solution comprised of a DJI M600 drone, a 3D lidar, and an RGB camera.Our system searches for nearby obstacles while performing a waypoint following flight path. The camera searches for the obstacles using a custom trained YOLO network. After an obstacle is located by a bounding box, the depth is found using the lidar points corresponding to the bounding box. The drone then takes evasive action if the flight path interstects with the obstacle's predicted path.
+
+
+My work on the project focused on simulation, path planning, and control. I implemented a potential field approach as the preliminary reactive planner. This approach used the optimal velocity, drone velocity, and the predicted obstacle trajectory to orbit around obstacles en route to the goal.
+
+
+
+To test and refine the planning I developed a simulation environment in ROS using RVIZ. I developed the environment to seemlessly integrate with, simulation tools provided by DJI. I also extended the functionality of the DJI simulator by implementing custom obstacle dynamics and visualizations. This image shows the mid-project validation results. The drone avoids a stationary ball using noisy sensor data. Shorlty after these results I demonstrated the avoidance of moving objects and multiple stationary objects.
+
+<p align="center">
+  <img align="center" src="images/aacas/svd_flight_results.png" height="300"/>
+</p>
+
+<p align="center">
+  <img align="center" src="images/aacas/svd_dynamic_obstacles.gif" height="300" />
+  <img align="center" src="images/aacas/svd_multi_obstacles.gif" height="300" />
+</p>
+
+One of the greatest lessons I learned during this project is the importance of proper systems engineering and planning. After three months of development, the COVID outbreak in 2020 forced the team to work remotely and cancel all hands-on development. Having done the initial planning, we identified the work packages that could be accomplished at home and rescoped the semester goals accordingly. Our adaptations resulted in positive feedback from both our professors and sponsor.
+
+
 ## Mobile Active Threat Emergency System (MATES)
 
 The MATES project was developed as a submission to the Air Force Research Lab's University Design Competition in 2019. I competed in the competition for my Mechanical Engineering senior design project at Utah State University. In rapidly developing emergencies, such as active shooters, natural disasters, or building collapses, the largest loss of life occurs due to miscommunication between first responders. After interviewing EMTs, police officers, enlisted military, and emergency response managers I implemented a proof of concept solution to better enable emergency response. My team developed an Internet of Things (IoT) application, with ThingWorx, that connects all first responders with one another in real time.
