@@ -20,7 +20,10 @@ To test and refine the planning I developed a simulation environment in ROS usin
 
 <p align="center">
   <img align="center" src="images/aacas/svd_dynamic_obstacles.gif" height="300" />
-  <img align="center" src="images/aacas/svd_multi_obstacles.gif" height="300" />
+</p>
+
+<p align="center">
+  <img align="center" src="images/aacas/svd_multi_object.gif" height="300" />
 </p>
 
 One of the greatest lessons I learned during this project is the importance of proper systems engineering and planning. After three months of development, the COVID outbreak in 2020 forced the team to work remotely and cancel all hands-on development. Having done the initial planning, we identified the work packages that could be accomplished at home and rescoped the semester goals accordingly. Our adaptations resulted in positive feedback from both our professors and sponsor.
