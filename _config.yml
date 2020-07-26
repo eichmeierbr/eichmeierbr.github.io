@@ -1,6 +1,5 @@
 theme: jekyll-theme-architect
 markdown: GFM
- [[params.social]]
-    icon = "linkedin"
-    icon_pack = "fa"
-    link = "//linkedin.com/in/eichmeierbr"
+footer-links:
+ github: eichmeierbr
+ linkedin: eichmeierbr
