@@ -19,4 +19,4 @@ I'm adding this project, not because it is particularly well done, but rather be
 
 In my second year with the team I helped fix a variety of bugs with the low level velocity controller, helped recruit new team members, and improved the simulation capabilities of the team. In coordination with a Mobile Robotics course taught by Dr. Greg Droge, I created a URDF representation of the vehicle. I then took a simple go-to-goal controller provided by Dr. Droge and implemented a bicycle model vehicle to represent the car. You can see the result of that work in this [repository](https://github.com/eichmeierbr/avc_urdf). This video shows my first attempts into vehicular robotics.
 
-<img align=center src="images/avc/avc_g2g.gif" />
+<img align=center src="./images/avc/avc_g2g.gif" />
