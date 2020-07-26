@@ -1,5 +1,7 @@
 # Work Experience
 
+[Return Home](/../../)
+
 ## Utah Power Electronics Lab
 
 ### Undergraduate Research Assistant: Fall 2017 - Spring 2019
@@ -69,3 +71,5 @@ After my Sophomre year I worked at SDL to mount a custom screen into a 2.5" serv
 <p align="center">
   <img align="center" src="images/sdl/housing_front.png" width="500"/>
 </p>
+
+[Return Home](/../../)

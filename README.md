@@ -23,7 +23,7 @@ Hello, and welcome to my portfolio! I am a robotics engineer with experience in 
 * [Games](https://github.com/eichmeierbr/games): Implementation of various games.
 
 
-## Resume
+## [Resume](./Braden_Eichmeier_Resume.pdf)
 
 <object data="Braden_Eichmeier_Resume.pdf" type="application/pdf" width="700px" height="700px">
     <embed src="Braden_Eichmeier_Resume.pdf">

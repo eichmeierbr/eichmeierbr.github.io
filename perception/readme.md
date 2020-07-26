@@ -1,5 +1,7 @@
 # Perception
 
+[Return Home](/../../)
+
 ## Computer Vision Assignments
 
 ### Bag of Words - Scene Recognition using Filter Banks
@@ -235,6 +237,7 @@ The following tables show my training results. You can also read my first attemp
 | Fully-Connected | 88% | 90% |
 | Convolutional | 94.5% | 92.5% |
 
+
 | Architecture | Bee | Cricket | Background |
 | --- | --- | --- | --- | 
 | Fully-Connected | 0.04% | 99% | 67.6% |
@@ -244,4 +247,6 @@ Dr. Kulyukin has since published several papers on his reasearch:
 
 [On Video Analysis of Omnidirectional Bee Traffic Counting Bee Motions with Motion Detection and Image Classification](https://www.researchgate.net/publication/335694732_On_Video_Analysis_of_Omnidirectional_Bee_Traffic_Counting_Bee_Motions_with_Motion_Detection_and_Image_Classification)
 
-[Toward AUdio Beehive Monitoring Deep Learning vs Standard Machine Learning in Classifying Beehive Audio Samples](https://www.researchgate.net/publication/327478653_Toward_Audio_Beehive_Monitoring_Deep_Learning_vs_Standard_Machine_Learning_in_Classifying_Beehive_Audio_Samples)
+[Toward Audio Beehive Monitoring Deep Learning vs Standard Machine Learning in Classifying Beehive Audio Samples](https://www.researchgate.net/publication/327478653_Toward_Audio_Beehive_Monitoring_Deep_Learning_vs_Standard_Machine_Learning_in_Classifying_Beehive_Audio_Samples)
+
+[Return Home](/../../)

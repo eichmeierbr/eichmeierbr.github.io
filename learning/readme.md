@@ -1,5 +1,7 @@
 # Machine Learning Projects
 
+[Return Home](/../../)
+
 ## Stock Market Prediction
 
 In my free time, I play around with machine learning applied to the stock market. While I currently don't use my work to seriously invest, I do enjoy applying my knowledge to predicting such complicated data. I first worked on this project in an Intelligent Systems course at Utah STate University. My initial efforts explored the effects of several hyperparameters on training shallow networks on predicting Apple stock. You can read my report for the project [here](images/stocks/stocks_report.pdf).
@@ -72,3 +74,5 @@ I implemented a system to estimate the  emission, transition, and prior values o
 * Principle Component Analysis and Dimensionality Reduction
 * Ensemble Methods and Adaboost
 * Information Theory
+
+[Return Home](/../../)
