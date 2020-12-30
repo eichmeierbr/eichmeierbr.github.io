@@ -2,6 +2,16 @@
 
 [Return Home](/../../)
 
+## Autonomous Solutions Inc.
+
+### Guidance, Navigation, and Control (GN&C) Intern: Summer 2020
+
+Over the summer of 2020 I was fortunate to receive an internship during the COVID-19 pandemic. Due to the circumstances, I worked remotely from my apartment in Pittsburgh. At ASI, I was asked to perform a wide array of tasks related to implementing a custom end to end visual odometry system. The front end of the pipeline I developed processed data from a special sensor and published the data as a ROS topic. Using the data I created a type of "image" where I could perform feature detection and tracking. Finally, the tracked features were used to predict the motion of the sensor. To aid in testing the pipeline I implemented a low-fidelity and a mid-fidelity simulation environment. By the end of summer I had all modules individually working in simulation and hardware. Unfortunately I was unable to harden the system to test the full system on live hardware before the summer ended.
+
+<p align="center">
+  <img align="center" src="images/asi.jpeg" width="500"/>
+</p>
+
 ## Utah Power Electronics Lab
 
 ### Undergraduate Research Assistant: Fall 2017 - Spring 2019

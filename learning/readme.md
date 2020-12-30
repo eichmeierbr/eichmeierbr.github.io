@@ -8,6 +8,15 @@ In my free time, I play around with machine learning applied to the stock market
 
 Since starting this project for the class, I have expanded it in several ways. I worked out a simulator to evaluate a trading algorithm for some period of time on historical stock data. I've also implemented wrapper classes with several models (SVM, KNN, Decision Trees, etc.) and constructed a majority vote system. I'm currently working on this project and am beginning to expand to neural networks.
 
+## Evolving Optimal Hyperparameters: Tune hyperparameters using a genetic algorithm
+
+Most, if not all, people who have worked in machine learning or controls knows the frustrating process of tuning hyperparameters. Considerable time is spent worrying if there is a bug in your code, or if you simply have not found a functional set of hyperparameters yet. The naive approach is to sample all pairs of parameters, but this becomes untractable in higher dimensions and only works in discontinuous space. To solve this problem, I helped develop a task agnostic hyperparameter optimizer using genetic algorithms. I worked on this project with Shaun Ryer and Stefan Zhu. The final report and presentation can be found here:
+
+[Report](images/robostats/hyperparameterTuning_FinalReport.pdf) and [Presentation](images/robostats/hyperparameterTuning_FinalPresentation.pdf)
+
+Our algorithm works with continuous and discrete values, categorical parameters, and logarithmic parameters. All values are normalized [0,1] within the optimizer. The user can select between several sampling methods to create the initial smaple population. Each sample is evaluated in the test environment and ranked in performance. The top subset of parameter sets are used to reproduce the next generation. This process is repeated as desired, or until convergence. In addition to a standard genetic algorthim, we employ a form of evaluation relaxation by using a shallow neural network to approximate the hyperparameter-reward state. Do a dense search through the neural network after each population evaluation. The top performers of the approximated hyperparameter space are injected into the top performers in the true hyperparameter space to simulate a type of "invasive species". This method helps the algorithm explore out of local optima. Further details and results can be found in the report.
+
+
 ## Reinforcement Learning for a Robotic Arm
 
 For the Robot Autonomy course at Carnegie Mellon, I worked on teaching a robotic arm to place groceries in a cupboard using reinforcement learning. The project was originally intended to be realized on a physical arm, but restrictions to the COVID-19 pandemic caused us to move to a simulated environment. We used RLBench and V-Rep to simulate the arm. You can find the code for this project in my git repository [here](https://github.com/eichmeierbr/robo_autonomy_project).
@@ -31,6 +40,42 @@ The report and presentation my teammates and I made for this project can by foun
 [Report](images/grocery_rl/Autonomy_Report.pdf)
 
 [Presentation](https://docs.google.com/presentation/d/1j3ABuQvJndEL6WjDsbPbcUgUFTWPosp4RI9eBwghe20/edit?usp=sharing)
+
+
+## Statistical Techniques in Robotics (RoboStats) - Carnegie Mellon University
+
+This course explored the application of machine learning algorithms to real world, changing environments. I learned about algorithms that learn online and the implications of such algorithms to deploying an untrained agent into the environment. To better understand the performance of learning algorithms, I learned about the expected optimal performance and variance of an array of algorithms and problems against stochastic and adversarial environments. The hyperparameter learning project detailed above was performed for the final project in this class.
+
+### **Prediction with Expert Advice (Weighted Majority Vote)**
+
+In this project I analyzed the expected performance of the weighted majority vote (WMA) and random weighted majority vote (RWMA) algorithms against constant, stochastic, and adversarial environments. To analyze the algorithms in a fun, but only slightly realistic environment, I created a set of rules to determine in the CMU football team would win a game. The assumptions were that the CMU players played well at home, in rainy conditions, and when less than half the team had an exam in the week leading up to the game. In the deterministic environment, the Tartans won if two of these three conditions are met. I then created a set of experts to predict the games based on the three key indicators, a pessimistic fan who predicts all losses, an optimistic fan who predicts all wins, and a fan that alternates between wins and losses.
+
+### **Online Supervised Learning**
+
+This project used an SVM to classify points from a lidar point cloud. The data came from an autonomous vehicle driving through Pittsburgh and contained 5 classes: Vegetation, Wire, Pole, Ground, Façade. I implemented a soft-margin SVM as the classifier for this dataset. A challenge with this problem is the wire and pole classes and drastically fewer points compared to the other classes. Despite this, the SVM I implemented acheived 92% accuracy in classifying the points. The following images show the true data labels and predicted labels on a dataset excluded from training.
+
+| True | Predicted |
+| :---: | :---: |
+| <img src="images/robostats/svm_pointcloud.png" title="true" width="500"/> | <img src="images/robostats/svm_pointcloud_pred.png" width="500" title="predicted"/> |
+
+### **Multi-Armed Bandits**
+
+Multi-Armed Bandits is a problem type where an agent must act between a set of actions, or allocate resources, in such a way to maximize reward. It is inspired by gambling in a casino where an individual must find the most profitable slot machine. In this project I implemented the UCB and EXP3 algorithms and compared their effectiveness in stochastic and adversarial environments. The UCB algorithm is designed to be optimal in stochastic environments whereas the EXP3 algorithm performs better against and adversary.
+
+### **Other Topics**
+
+In addition to the concepts discussed above, the course covered a wide array of other topics and algorithms:
+
+* Basic convex optimization
+* Follow the regularized leader
+* Boosting
+* Reinforcement Learning
+* Policy Gradients: Model-based + Model-free
+* Off-policy RL
+* Model-based RL
+* Imitation Learning
+* Generative Adversarial Networks (GANs)
+* Variational Autoencoders (VAEs)
 
 ## Introduction to Machine Learning - Carnegie Mellon University
 
