@@ -39,9 +39,9 @@ In this project I compared the performance of 4 different planning algorithms fo
 
 | **RRT** | **RRT*** | 
 | :---: | :---: |
-| <img src="images/planning_class/rrt.gif" title="rrt"/> | <img src="images/planning_class/rrt*.gif" title="rrt*"/> |
+| <img src="images/planning_class/rrt.gif" title="rrt"/> | <img src="images/planning_class/rrts.gif" title="rrts"/> |
 | **RRT-Connect** | **PRM** | 
-| <img src="images/planning_class/rrt.gif" title="rrtc"/> | <img src="images/planning_class/rrt*.gif" title="prm"/> |
+| <img src="images/planning_class/rrt.gif" title="rrtc"/> | <img src="images/planning_class/prm.gif" title="prm"/> |
 
 
 ### **Symbolic Planning**
