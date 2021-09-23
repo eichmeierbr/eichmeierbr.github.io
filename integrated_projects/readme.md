@@ -31,6 +31,8 @@ To test and refine the planning I developed a simulation environment in ROS usin
 
 One of the greatest lessons I learned during this project is the importance of proper systems engineering and planning. After three months of development, the COVID outbreak in 2020 forced the team to work remotely and cancel all hands-on development. Having done the initial planning, we identified the work packages that could be accomplished at home and rescoped the project goals accordingly. Our adaptations resulted in positive feedback from both our professors and sponsor.
 
+### Safety Analysis and Extension
+
 
 ## Mobile Active Threat Emergency System (MATES)
 

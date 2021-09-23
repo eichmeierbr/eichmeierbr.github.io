@@ -2,6 +2,22 @@
 
 [Return Home](/../../)
 
+## Robot Localization and Mapping
+
+### Final Project - Online Estimation of Sensor Error
+
+
+### Dense SLAM with Point-Based Fusion
+
+
+### Linear and Non-Linear Pose Graph Optimization
+
+### EKF-SLAM
+
+
+### Monte-Carlo Localization
+
+
 ## Planning and Decision-making in Robotics Assignments - Carnegie Mellon University
 
 The following projects were developed as homework assignments for Dr. Maxim Likhachev's planning course at Carnegie Mellon University in Fall 2020. Due to academic integrity considerations, I can only discuss my work at a surface level. Each project used C++ as the programming language. 
