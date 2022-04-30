@@ -4,18 +4,60 @@
 
 ## Robot Localization and Mapping
 
+Simultaneous Localization and Mapping (SLAM) is one of my favorite topics within robotics. It is a widely applicable field that combines the perception and planning/controls functionality of a robotic system. The following projects took place under the guidance of Dr. Michael Kaess in Carnegie Mellon's Robot Localization and Mapping course (16-833).
+
 ### Final Project - Online Estimation of Sensor Error
+
+Both optimization and filter based SLAM approaches require some initial estimate of the uncertainty for each data source. In many settings these can be accurately defined with prior testing. However, there are many cases in the wild that could derail an effective SLAM algorithm. For my end of term class project I worked on a research type project to estimate the relative uncertainty of several data sources in real time. The project should promising results for improving the [results](./images/slam/SLAM_Final_Report.pdf) of a baseline SLAM algorithm and detecting unreliability in sensors throughout a simulation environment. In my freetime I extend this project using the KAIST Urban Driving and KITTI datasets.
+
+<object data="./images/slam/SLAM_Final_Report.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="./images/slam/SLAM_Final_Report.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="./images/slam/SLAM_Final_Report.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
 
 
 ### Dense SLAM with Point-Based Fusion
 
+This project uses an RGB-D camera to reconstruct a 3D representation of a living room. In dense SLAM, the algorithm attempts to represent the entire state space from sparse data. Here, the ICP algorithm is used to align nearby data scans. Then, a weighted filter is used to calculate an optimal value for the color for each surface aligned from the ICP. 
+
+<p align="center">
+  <img align="center" src="images/slam/icp_result.png" width="600"/>
+</p>
+
+
+<p align="center">
+  <img align="center" src="images/slam/dense_living_room.png" width="600"/>
+</p>
+
 
 ### Linear and Non-Linear Pose Graph Optimization
 
+Graph-based SLAM produces the robot's pose over time using a linear optimization scheme. The problem is formulated to optimize the pose by minimizing the error between received sensor measurements, modeled measurements if the sequences of poses is correct. In this project the sensor returned non-linear measurements (angle and range) between the robot and a set of landmarks. I formatted these into a linear system to run the linear optimizer. These images show the the trajectory and landmark estimates before and after optimization.
+
+<p float="center">
+  <img src="images/slam/graph_unoptimized.png" width="600"/>
+  <img src="images/slam/graph_optimized.png" width="600"/>
+</p>
+
+
 ### EKF-SLAM
 
+The Kalman Filter is the optimal estimator for linear system. It marginalizes all previous data into state and uncertainty matrices. This approach stands as the base of many filtering based algorithms and is widely used as a low computation pose estimator (ideal for aerospace applications). An Extended Kalman Filter (EKF) approximates non-linear systems using a jacobian matrix. The following image shows a predicted robot path with ellipses representing the robot and landmark uncertainties. For the robot pose, the magenta and blue ellipses represent the uncertainty after the prediction step and update steps respectively. The red ellipses represent the initial landmark uncertainty, and the green ellipses show the updated landmark uncertainty estimates.
+
+<p align="center">
+  <img align="center" src="images/slam/ekf_results.png" width="600"/>
+</p>
 
 ### Monte-Carlo Localization
+
+Monte-Carlo Localization uses a "survival of the fittest" approach for localizing a robot within a known map. The approach initializes a set of particles within the map (or a selected range if a prior is given). Then, algorithm computes the similarity between the received sensor measurements and "true" measurements if the particle is in the correct location. The particles are resampled from the population based on their probability of occuring at the current pose. After the particles are resampled, noise is added to the perceived motion to probabilistically move the particles towards the true position.
+
+This project uses MCL on a dataset collected from Wean Hall at Carnegie Mellon University. I sampled the motion model for the robot, simulated raycasting for "true" lidar data, and optimized the algorithm to run in real time. The implementation was done in python and vectorized using numpy. This is my favorite example of the five datasets I was given. I like how you can clearly see the algorithm converge on two populations that are in similar hallway conditions. After some time the algorithm shows clear convergence to a seemingly optimal solution.
+
+<p align="center">
+  <img align="center" src="images/slam/monte-carlo.gif" width="600"/>
+</p>
 
 
 ## Planning and Decision-making in Robotics Assignments - Carnegie Mellon University

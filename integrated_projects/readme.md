@@ -13,7 +13,6 @@ The project focused on the desire to enable beyond visual line of sight (BVLOS) 
 My work on the project focused on simulation, path planning, and control. I implemented a potential field approach as the preliminary reactive planner. This approach used the optimal velocity, drone velocity, and the predicted obstacle trajectory to orbit around obstacles en route to the goal.
 
 
-
 To test and refine the planning I developed a simulation environment in ROS using RVIZ. I developed the environment to seemlessly integrate with, simulation tools provided by DJI. I also extended the functionality of the DJI simulator by implementing custom obstacle dynamics and visualizations. This image shows the mid-project validation results. The drone avoids a stationary ball using noisy sensor data. Shorlty after these results I demonstrated the avoidance of moving objects and multiple stationary objects.
 
 <p align="center">
@@ -26,12 +25,26 @@ To test and refine the planning I developed a simulation environment in ROS usin
 </p>
 
 
+Click the image for the final demonstration video of the system.
+
 [![MATES Video](https://img.youtube.com/vi/-yjMVBmMjjA/0.jpg)](https://www.youtube.com/watch?v=-yjMVBmMjjA)
 
 
 One of the greatest lessons I learned during this project is the importance of proper systems engineering and planning. After three months of development, the COVID outbreak in 2020 forced the team to work remotely and cancel all hands-on development. Having done the initial planning, we identified the work packages that could be accomplished at home and rescoped the project goals accordingly. Our adaptations resulted in positive feedback from both our professors and sponsor.
 
 ### Safety Analysis and Extension
+
+After the AACAS project concluded, I had the pleasure of taking the Provably Safe Robotics course from Dr. Changliu Liu. I chose to do the final project on a safety analysis of the planning and controls of the AACAS system. I approached analyzed the problem with an adversarial game between an evader running the AACAS planner and a pursuer, who attempted to crash into the evader. 
+
+This study helped me learn carefully planned systems can have glaring problems when viewed from a different perspective. I was fortunate to see the importance of analyzing safety and failure points throughout a robotic pipeline. Dr. Liu was so impressed with my work she asked I make it public as reference to future course websites. You can view the source code and report at this [repository](https://github.com/eichmeierbr/aacasSafety).
+
+The following videos show the original AACAS system (left) and the improved system (right). In these videos the safety agent (orange dot) is attempting to reach the goal (green dot). The adversary (red dot) begins at the goal pointed towards the evader. The red circle shows the avoidance radius where the robot begins to avoid. The blue circle is the failure limit, where a crash is deemed to occur. 
+
+<p align="center">
+  <img align="center" src="./images/aacas/aacas_original.gif" height="300" />
+  <img align="center" src="./images/aacas/aacas_safe.gif" height="300" />
+</p>
+
 
 
 ## Mobile Active Threat Emergency System (MATES)
