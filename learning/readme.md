@@ -14,7 +14,7 @@ Most, if not all, people who have worked in machine learning or controls knows t
 
 [Report](images/robostats/hyperparameterTuning_FinalReport.pdf) and [Presentation](images/robostats/hyperparameterTuning_FinalPresentation.pdf)
 
-Our algorithm works with continuous and discrete values, categorical parameters, and logarithmic parameters. All values are normalized [0,1] within the optimizer. The user can select between several sampling methods to create the initial smaple population. Each sample is evaluated in the test environment and ranked in performance. The top subset of parameter sets are used to reproduce the next generation. This process is repeated as desired, or until convergence. In addition to a standard genetic algorthim, we employ a form of evaluation relaxation by using a shallow neural network to approximate the hyperparameter-reward state. Do a dense search through the neural network after each population evaluation. The top performers of the approximated hyperparameter space are injected into the top performers in the true hyperparameter space to simulate a type of "invasive species". This method helps the algorithm explore out of local optima. Further details and results can be found in the report.
+Our algorithm works with continuous and discrete values, categorical parameters, and logarithmic parameters. All values are normalized [0,1] within the optimizer. The user can select between several sampling methods to create the initial sample population. Each sample is evaluated in the test environment and ranked in performance. The top subset of parameter sets are used to reproduce the next generation. This process is repeated as desired, or until convergence. In addition to a standard genetic algorithm, we employ a form of evaluation relaxation by using a shallow neural network to approximate the hyperparameter-reward state. Do a dense search through the neural network after each population evaluation. The top performers of the approximated hyperparameter space are injected into the top performers in the true hyperparameter space to simulate a type of "invasive species". This method helps the algorithm explore out of local optima. Further details and results can be found in the report.
 
 
 ## Reinforcement Learning for a Robotic Arm
@@ -52,7 +52,7 @@ In this project I analyzed the expected performance of the weighted majority vot
 
 ### **Online Supervised Learning**
 
-This project used an SVM to classify points from a lidar point cloud. The data came from an autonomous vehicle driving through Pittsburgh and contained 5 classes: Vegetation, Wire, Pole, Ground, Façade. I implemented a soft-margin SVM as the classifier for this dataset. A challenge with this problem is the wire and pole classes and drastically fewer points compared to the other classes. Despite this, the SVM I implemented acheived 92% accuracy in classifying the points. The following images show the true data labels and predicted labels on a dataset excluded from training.
+This project used an SVM to classify points from a lidar point cloud. The data came from an autonomous vehicle driving through Pittsburgh and contained 5 classes: Vegetation, Wire, Pole, Ground, Facade. I implemented a soft-margin SVM as the classifier for this dataset. A challenge with this problem is the wire and pole classes and drastically fewer points compared to the other classes. Despite this, the SVM I implemented achieved 92% accuracy in classifying the points. The following images show the true data labels and predicted labels on a dataset excluded from training.
 
 | True | Predicted |
 | :---: | :---: |
@@ -97,7 +97,7 @@ Similar to a project in my perception experience, I created a fully connected ne
 
 **4) Reinforcement Learning**
 
-In this project I created a Q-Learning model to learn to play a simple "Mountain Car" game. In the game, the car is at the bottom of a valley. The state space is the cart's postition and velocity. The action space is to move left, move right, or do nothing. The problem is that the car does not have enough power to directly move up the hill, so it must learn to rock back and forth and use momentum to reach the top. To find the optimal action, the q-learning model learns a single layer linear function to approximate the reward function for each individual action as a function of the input space. It then passes the cart space through the three models and selects the highest value. I also included a random element to introduce state space exploration vs. exploitation. 
+In this project I created a Q-Learning model to learn to play a simple "Mountain Car" game. In the game, the car is at the bottom of a valley. The state space is the cart's position and velocity. The action space is to move left, move right, or do nothing. The problem is that the car does not have enough power to directly move up the hill, so it must learn to rock back and forth and use momentum to reach the top. To find the optimal action, the q-learning model learns a single layer linear function to approximate the reward function for each individual action as a function of the input space. It then passes the cart space through the three models and selects the highest value. I also included a random element to introduce state space exploration vs. exploitation. 
 
 <img align=center src="./images/rl_car.gif" />
 

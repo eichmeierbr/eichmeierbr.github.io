@@ -2,6 +2,23 @@
 
 [Return Home](/../../)
 
+## Ten One Aerospace
+
+### Sr Software Engineer: June 2025 - Current
+
+
+## Hill Air Force Base
+
+### Software Engineer: June 2021 - June 2025
+
+I had a fantastic start to my professional career as a civilian employee of the United States Air Force. The Air Force provided many unique technical challenges and opportunity for growth. My first year and a half focused on embedded simulation development for the F-16. Then, I had a 6 month fellowship in machine learning research with MIT and the MIT Lincoln Laboratory. Finally, I worked two years on the internal research and development team for emerging technologies that focused on big data applications. On this team I rose from individual contributor to technical program manager, which role was more accurately described as a staff engineer. You can find a more thorough description of this time here: [309 Software Engineering Group](./309sweg.md).
+
+## ProtoInnovations
+
+### Research Consultant: Spring 2021
+
+During my final semester at Carnegie Mellon, I was asked by a professor to work as a research consultant in his startup ProtoInnovations. ProtoInnovations performs design, analysis, and testing for the mobility subsystem of planetary rovers. I researched a novel process called "risk-driven design". In this paradigm, I helped formulate a framework that attempt to prioritize development efforts and reduce mission risk. The process generally functioned by identifying sources of uncertainty (both in the mission and rover design), estimating the amount of reducible (epistemic) uncertainty, and prioritizing efforts to reduce that uncertainty.
+
 ## Autonomous Solutions Inc.
 
 ### Guidance, Navigation, and Control (GN&C) Intern: Summer 2020
@@ -48,7 +65,7 @@ From January to October in 2018 I designed an advanced battery pack for an exter
   <img align="center" src="images/upel/amped.png" width="500"/>
 </p>
 
-I designed the first prototype of the exterior casing and machined many of the components using a 3-axis CNC mill. Two of the more complex of these pieces includes the power board heat sink and the front plate, both of which are shown below. A major challenge in the heat sink design was designing such small pads to interface directly with heat generating componenets.
+I designed the first prototype of the exterior casing and machined many of the components using a 3-axis CNC mill. Two of the more complex of these pieces includes the power board heat sink and the front plate, both of which are shown below. A major challenge in the heat sink design was designing such small pads to interface directly with heat generating components.
 
 <p align="center">
   <img align="center" src="images/upel/amped_hs.png" width="500"/>
@@ -72,7 +89,7 @@ In addition to the structural design, I also designed the thermal system for the
 
 ### Mechanical Engineering Intern: Summer 2017
 
-After my Sophomre year I worked at SDL to mount a custom screen into a 2.5" server drive bay. The device mounts the screen to a custom hinge, which connects to a miniature linear slide rail mounted inside the drive bay. The slide extends the screen from the housing to a viewing position. When housed, a touch latch connects to the hinge to secure the screen from unintended deployment. I designed the system to use two separate sets of electronics: the primary screen and the secondary data relay. This two-stage electronics setup allows users to access the screen without compromising security to the rest of the server. Additional design considerations include EMI protection, secure mounting, and practical machinability.
+After my Sophomore year I worked at SDL to mount a custom screen into a 2.5" server drive bay. The device mounts the screen to a custom hinge, which connects to a miniature linear slide rail mounted inside the drive bay. The slide extends the screen from the housing to a viewing position. When housed, a touch latch connects to the hinge to secure the screen from unintended deployment. I designed the system to use two separate sets of electronics: the primary screen and the secondary data relay. This two-stage electronics setup allows users to access the screen without compromising security to the rest of the server. Additional design considerations include EMI protection, secure mounting, and practical machinability.
 
 <p align="center">
   <img align="center" src="images/sdl/housing_multiview.png" width="500"/>

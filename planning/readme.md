@@ -8,7 +8,7 @@ Simultaneous Localization and Mapping (SLAM) is one of my favorite topics within
 
 ### Final Project - Online Estimation of Sensor Error
 
-Both optimization and filter based SLAM approaches require some initial estimate of the uncertainty for each data source. In many settings these can be accurately defined with prior testing. However, there are many cases in the wild that could derail an effective SLAM algorithm. For my end of term class project I worked on a research type project to estimate the relative uncertainty of several data sources in real time. The project should promising results for improving the [results](./images/slam/SLAM_Final_Report.pdf) of a baseline SLAM algorithm and detecting unreliability in sensors throughout a simulation environment. In my freetime I extend this project using the KAIST Urban Driving and KITTI datasets.
+Both optimization and filter based SLAM approaches require some initial estimate of the uncertainty for each data source. In many settings these can be accurately defined with prior testing. However, there are many cases in the wild that could derail an effective SLAM algorithm. For my end of term class project I worked on a research type project to estimate the relative uncertainty of several data sources in real time. The project should promising results for improving the [results](./images/slam/SLAM_Final_Report.pdf) of a baseline SLAM algorithm and detecting unreliability in sensors throughout a simulation environment. In my free time I extend this project using the KAIST Urban Driving and KITTI datasets.
 
 <object data="./images/slam/SLAM_Final_Report.pdf" type="application/pdf" width="700px" height="700px">
     <embed src="./images/slam/SLAM_Final_Report.pdf">
@@ -51,7 +51,7 @@ The Kalman Filter is the optimal estimator for linear system. It marginalizes al
 
 ### Monte-Carlo Localization
 
-Monte-Carlo Localization uses a "survival of the fittest" approach for localizing a robot within a known map. The approach initializes a set of particles within the map (or a selected range if a prior is given). Then, algorithm computes the similarity between the received sensor measurements and "true" measurements if the particle is in the correct location. The particles are resampled from the population based on their probability of occuring at the current pose. After the particles are resampled, noise is added to the perceived motion to probabilistically move the particles towards the true position.
+Monte-Carlo Localization uses a "survival of the fittest" approach for localizing a robot within a known map. The approach initializes a set of particles within the map (or a selected range if a prior is given). Then, algorithm computes the similarity between the received sensor measurements and "true" measurements if the particle is in the correct location. The particles are resampled from the population based on their probability of occurring at the current pose. After the particles are resampled, noise is added to the perceived motion to probabilistically move the particles towards the true position.
 
 This project uses MCL on a dataset collected from Wean Hall at Carnegie Mellon University. I sampled the motion model for the robot, simulated raycasting for "true" lidar data, and optimized the algorithm to run in real time. The implementation was done in python and vectorized using numpy. This is my favorite example of the five datasets I was given. I like how you can clearly see the algorithm converge on two populations that are in similar hallway conditions. After some time the algorithm shows clear convergence to a seemingly optimal solution.
 
@@ -74,7 +74,7 @@ This course taught a wide range of planning algorithms and paradigms:
 
 ### **Catching a Moving Target**
 
-In this problem, a robot is given perfect knowledge of the environment and future trajectory of a moving target. The environment is discretized as a 2D array. Both the target and the robot are able to move using an 8-connected grid. To solve this problem, I frame the search as a mutli-goal 2.5D search. I then explore the search space using a basic A* search. This method efficiently finds the optimal target interception in most cases. The following videos show the robot catching the target in both uniform and non-uniform cost environments.
+In this problem, a robot is given perfect knowledge of the environment and future trajectory of a moving target. The environment is discretized as a 2D array. Both the target and the robot are able to move using an 8-connected grid. To solve this problem, I frame the search as a multi-goal 2.5D search. I then explore the search space using a basic A* search. This method efficiently finds the optimal target interception in most cases. The following videos show the robot catching the target in both uniform and non-uniform cost environments.
 
 <p float="center">
   <img src="images/planning_class/map3.gif" width="600"/>
@@ -141,7 +141,7 @@ I evaluated the system and tuned control parameters by running the simulated dro
 
 ## Autonomous Vehicle Club
 
-I'm adding this project, not because it is particularly well done, but rather becuase it was my first experience in robotics. At Utah State University I participated in the Autonomous Vehicle Club. We had a 1/10 scale RC car retrofitted with an IMU and a lidar. We used this car to participate in the Sparkfun Autonomous Vehicle Competition. I joined the team during my Junior year at USU. In my first year on the team I implemented Google Cartographer to improve our SLAM capability. This is also when I became familiar with Linux and ROS. 
+I'm adding this project, not because it is particularly well done, but rather because it was my first experience in robotics. At Utah State University I participated in the Autonomous Vehicle Club. We had a 1/10 scale RC car retrofitted with an IMU and a lidar. We used this car to participate in the Sparkfun Autonomous Vehicle Competition. I joined the team during my Junior year at USU. In my first year on the team I implemented Google Cartographer to improve our SLAM capability. This is also when I became familiar with Linux and ROS. 
 
 In my second year with the team I helped fix a variety of bugs with the low level velocity controller, helped recruit new team members, and improved the simulation capabilities of the team. In coordination with a Mobile Robotics course taught by Dr. Greg Droge, I created a URDF representation of the vehicle. I then took a simple go-to-goal controller provided by Dr. Droge and implemented a bicycle model vehicle to represent the car. You can see the result of that work in this [repository](https://github.com/eichmeierbr/avc_urdf). This video shows my first attempts into vehicular robotics.
 

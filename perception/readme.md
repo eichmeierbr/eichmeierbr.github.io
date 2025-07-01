@@ -6,11 +6,11 @@
 
 ### Bag of Words - Scene Recognition using Filter Banks
 
-This project uses a classical approach to scene recognition. The first step uses different filters (guassion, derivative of gaussian, etc.) at different scales to create a bank of filtered images. 
+This project uses a classical approach to scene recognition. The first step uses different filters (gaussian, derivative of gaussian, etc.) at different scales to create a bank of filtered images. 
 
  <img align=center src="images/bag_of_words/filter_bank.png" />
 
-Then, a feature vector is created by creating a “pipe” of a random subset of pixels through all of the images. Using a sample of these feature vectors from the training images, I used a K-means cluster to define a number of different visual wors within the images. The next four pairs of images show a visual word representation of an aquarium, kitchen, waterfall, and desert respectively. 
+Then, a feature vector is created by creating a “pipe” of a random subset of pixels through all of the images. Using a sample of these feature vectors from the training images, I used a K-means cluster to define a number of different visual words within the images. The next four pairs of images show a visual word representation of an aquarium, kitchen, waterfall, and desert respectively. 
 
 <p float="center">
   <img src="images/bag_of_words/aquarium.png" width="400" />
@@ -59,7 +59,7 @@ After finding the homography between the template book cover and the scene shown
   <img align="center" src="images/homography/harry_potter.png" />
 </p>
 
-Using this same homography algorithm, there's two fun applications I implemented. The frst algorithm is a basic panorama creator. It works by taking two images that have some amount of overlap and match the common features. Then it finds a homography from one image to the other. Improvements could be made to the panorama by bluring the boundaries between the two images. Here is a panorama I made myself using this method. The images were taken on the bridge connecting Newell Simon Hall and Wean Hall at Carnegie Mellon University. The background shows the Cathedral of Learning at the University of Pittsburgh.
+Using this same homography algorithm, there's two fun applications I implemented. The first algorithm is a basic panorama creator. It works by taking two images that have some amount of overlap and match the common features. Then it finds a homography from one image to the other. Improvements could be made to the panorama by blurring the boundaries between the two images. Here is a panorama I made myself using this method. The images were taken on the bridge connecting Newell Simon Hall and Wean Hall at Carnegie Mellon University. The background shows the Cathedral of Learning at the University of Pittsburgh.
 
 <p float="center">
   <img src="images/homography/pano_left.jpg" width="400" />
@@ -101,13 +101,13 @@ This project creates a 3D point cloud from two images of the same object. The fo
   <img src="images/reconstruction/im2.png" width="400" /> 
 </p>
 
-The first step in this process is finding the correspondances between the two images. For this project I was given the points to create the reconstruction, but they could just as easily be found using a feature matching method similar to the one I used in the homography project. Then I calculate the fundamental matrix using the 8-point algorithm. Given any point in one image, the fundamental finds the epipolar line along with that point resides in the other image. I then scan along that epipolar line to find the corresponding point in the other image.
+The first step in this process is finding the correspondences between the two images. For this project I was given the points to create the reconstruction, but they could just as easily be found using a feature matching method similar to the one I used in the homography project. Then I calculate the fundamental matrix using the 8-point algorithm. Given any point in one image, the fundamental finds the epipolar line along with that point resides in the other image. I then scan along that epipolar line to find the corresponding point in the other image.
 
 <p float="center">
   <img src="images/reconstruction/epipolarMatch.png" />
 </p>
 
-Given the fundamental matrix, the relative camera matrices between the two images can be computed. Using the point correspondances and the relative matrices I performed a least squares error minimiation to find the most likely 3D point for each given correspondance pair. The next image shows the reconstructed temple in 3D.
+Given the fundamental matrix, the relative camera matrices between the two images can be computed. Using the point correspondences and the relative matrices I performed a least squares error minimization to find the most likely 3D point for each given correspondence pair. The next image shows the reconstructed temple in 3D.
 
 <p float="center">
   <img src="images/reconstruction/2temples.png" />
@@ -203,7 +203,7 @@ Using the same neural network implementation, I also trained a 4 layer auto enco
 
 ### Photometric Stereo
 
-In this project I use 7 different images to reconstruct the shape of a women's face. Each of the images is taken at the same angle, but light shines on the face from a different angle. To do so, I extract the luminance channel from each image. Then, I estimate the pseudonormals of the surface in a least squares sense using singular value decomposition. I then normalize the psuedonormal at each pixel to find the pixel's albido. The left image shows the image albedos and the right image shows the normals.
+In this project I use 7 different images to reconstruct the shape of a women's face. Each of the images is taken at the same angle, but light shines on the face from a different angle. To do so, I extract the luminance channel from each image. Then, I estimate the pseudonormals of the surface in a least squares sense using singular value decomposition. I then normalize the psuedonormal at each pixel to find the pixel's albedo. The left image shows the image albedos and the right image shows the normals.
 
 <p float="center">
   <img src="images/photometricStereo/uncalibrated_albedo.png" width="400" />
@@ -220,7 +220,7 @@ Finally, I integrate the matrix of psuedonormals using the Frankot-Chellappa alg
 
 ### Custom YOLO
 
-In this project I trained a custom network ontop of YOLO/Darknet to detect three random objects from my living room: a rubick's cube, a cactus, and a can of my wife's favorite "hotchocky" (hot chocolate). I then ran the network live on my computer's webcam to show the results. Pardon the delays in the video, my laptop at the time was quite slow.
+In this project I trained a custom network on top of YOLO/Darknet to detect three random objects from my living room: a rubik's cube, a cactus, and a can of my wife's favorite "hotchocky" (hot chocolate). I then ran the network live on my computer's webcam to show the results. Pardon the delays in the video, my laptop at the time was quite slow.
 
 <p float="center">
   <img src="images/customYOLO.gif" />
