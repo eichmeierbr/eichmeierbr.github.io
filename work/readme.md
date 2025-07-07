@@ -11,7 +11,7 @@
 
 ### Software Engineer: June 2021 - June 2025
 
-I had a fantastic start to my professional career as a civilian employee of the United States Air Force. The Air Force provided many unique technical challenges and opportunity for growth. My first year and a half focused on embedded simulation development for the F-16. Then, I had a 6 month fellowship in machine learning research with MIT and the MIT Lincoln Laboratory. Finally, I worked two years on the internal research and development team for emerging technologies that focused on big data applications. On this team I rose from individual contributor to technical program manager, which role was more accurately described as a staff engineer. You can find a more thorough description of this time here: [309 Software Engineering Group](.jobs//309sweg.md).
+I had a fantastic start to my professional career as a civilian employee of the United States Air Force. The Air Force provided many unique technical challenges and opportunity for growth. My first year and a half focused on embedded simulation development for the F-16. Then, I had a 6 month fellowship in machine learning research with MIT and the MIT Lincoln Laboratory. Finally, I worked two years on the internal research and development team for emerging technologies that focused on big data applications. On this team I rose from individual contributor to technical program manager, which role was more accurately described as a staff engineer. You can find a more thorough description of this time here: [309 Software Engineering Group](./jobs/309sweg.md).
 
 ## ProtoInnovations
 
