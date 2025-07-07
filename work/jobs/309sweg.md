@@ -13,7 +13,7 @@ Half of my assignment during the Phantom Fellowship was working with MIT and Lin
 
 In addition to the work with the Responsible AI team, I produced a novel research paper on machine learning applications at the maintenance repair depot at Hill Air Force Base. I identified several promising opportunities for improving existing workflows with AI/ML by interviewing a wide swath of practitioners and subject matter experts. My findings were received with high praise and presented to several high leaders back at Hill AFB. After my time at the AIA concluded, I was asked to condense my report to a 2-page extended abstract for submission to [HPEC 2023](https://ieee-hpec.org/index.php/ieee-hpec-2023-prelim-agenda/). This is my first publication to an academic conference, which I am quite proud of. Many details were distilled and removed to prepare the document for public release, but I'm happy to be able to share it here:
 
-<object data="HPEC2023_paper.pdf" type="application/pdf" width="700px" height="700px">
+<object data="AbstractMlApplicationsAtHill.pdf" type="application/pdf" width="700px" height="700px">
     <embed src="AbstractMlApplicationsAtHill.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="AbstractMlApplicationsAtHill.pdf">Download PDF</a>.</p>
     </embed>
